@@ -1,4 +1,4 @@
-# Twitter-Sentiment-Analysis-using-R-Shiny-WebApp
+# Twitter Sentiment Analysis using R & Shiny WebApp
 A Simple Approach to Twitter Sentiment Analysis in R Programming Language
 
    This project is on “Twitter Sentiment Analysis using R”
@@ -27,10 +27,39 @@ Shiny & Plotrix (R Libraries)
 ## Steps to execute this program are :
 
 * **Create a Twitter Developer account [here](https://developer.twitter.com/). After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
-* **After creating a Twitter App you will get Twitter API keys, now in Rstudio open server.R file & replace "XXXXXXXXX" with appropriate API keys.**
+* **After creating a Twitter App you will get Twitter API keys, now in RStudio open server.R file & replace "XXXXXXXXX" with appropriate API keys.**
 * **Now execute this script, using "Run App" button provided in the above section of RStudio.**
 * **Once you execute the script, you will get an interactive dashboard to analyze Sentiment Analysis of Twitter Data.**
 * **Once your run the ui.R/server.R script, it will show the following dashboard which will be interactive:**
+
+**1) Search input & Location Selection (By default location is set to Worldwide)**
+
+![Alt text](sample_output/search.png)
+
+
+**2) Word Cloud Formation **
+
+![Alt text](sample_output/wordcloud.png)
+
+**3) Plotting Histogram of Sentiments **
+
+![Alt text](sample_output/histogram.png)
+
+**4) Pie Chart for Sentiment Percentage**
+
+![Alt text](sample_output/piechart.png)
+
+**5) Table of Analyzed Tweets associated with the searched Hashtag**
+
+![Alt text](sample_output/table.png)
+
+**6) Barplot of Top 20 Users who used that Hashtag**
+
+![Alt text](sample_output/top20.png)
+
+**7) Twitter Handle Analysis (Hashtag Frequencies by a particular User) **
+
+![Alt text](sample_output/handle.png)
 
 ## Contributors
 
