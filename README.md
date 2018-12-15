@@ -25,7 +25,8 @@ An IDE for R Programming (RStudio)
 ```
 ## Steps to execute this program are :
 
-* **Create a Twitter Developer account** [here](https://developer.twitter.com/)
+* **Create a Twitter Developer account [here](https://developer.twitter.com/).**
+* **After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
 
 ## Contributors
 
