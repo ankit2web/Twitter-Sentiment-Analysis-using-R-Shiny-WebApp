@@ -22,6 +22,7 @@ Prerequisites for this project are :
 Twitter API
 R Binary
 An IDE for R Programming (RStudio)
+Shiny & Plotrix (R Libraries)
 ```
 ## Steps to execute this program are :
 
