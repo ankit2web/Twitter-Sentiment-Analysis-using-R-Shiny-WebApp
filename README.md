@@ -13,7 +13,18 @@ mining. Where using simple user interface they will be able to
 create a report based on their search keyword. This application
 is very simple and easy to use. So it will be comfortable for
 everyone to use it.
+   
+   This project was built using [Shiny WebApp](https://shiny.rstudio.com/). Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. You can also extend your Shiny apps with CSS themes, htmlwidgets, and JavaScript actions.
+   
+# Shiny
 
+**In Shiny App, there are 2 types of creating GUI Based Web Applications :**
+1) ```Single-file``` (app.R)
+2) ```Multi-file``` (ui.R,server.R)
+
+This project is ```Multi-file``` type, which contains 2 separate files for Front-End & Back-End Development.
+
+```ui.R``` is for Front-End & ```server.R``` is for Back-End.
 # Prerequisites
 
 Prerequisites for this project are :
