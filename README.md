@@ -28,7 +28,7 @@ Shiny & Plotrix (R Libraries)
 
 * **Create a Twitter Developer account [here](https://developer.twitter.com/). After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
 * **After creating a Twitter App you will get Twitter API keys, now in Rstudio open server.R file & replace "XXXXXXXXX" with appropriate API keys.**
-* **Now execute this script, using "Run App" button provided above.**
+* **Now execute this script, using "Run App" button provided in the above section of RStudio.**
 
 ## Contributors
 
