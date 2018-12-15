@@ -14,16 +14,15 @@ create a report based on their search keyword. This application
 is very simple and easy to use. So it will be comfortable for
 everyone to use it.
    
-   This project was built using [Shiny WebApp](https://shiny.rstudio.com/). Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. You can also extend your Shiny apps with CSS themes, htmlwidgets, and JavaScript actions.
-   
 # Shiny
 
+ This project was built using [Shiny WebApp](https://shiny.rstudio.com/). Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards. You can also extend your Shiny apps with CSS themes, htmlwidgets, and JavaScript actions.
+ 
 **In Shiny App, there are 2 types of creating GUI Based Web Applications :**
 1) ```Single-file``` (app.R)
 2) ```Multi-file``` (ui.R,server.R)
 
 This project is ```Multi-file``` type, which contains 2 separate files for Front-End & Back-End Development.
-
 ```ui.R``` is for Front-End & ```server.R``` is for Back-End.
 # Prerequisites
 
@@ -34,6 +33,7 @@ Twitter API
 R Binary
 An IDE for R Programming (RStudio)
 Shiny & Plotrix (R Libraries)
+Positive & Negative Words List (To compare Tweets for Sentiment)
 ```
 ## Steps to execute this program are :
 
