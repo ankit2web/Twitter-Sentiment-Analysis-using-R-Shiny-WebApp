@@ -29,6 +29,8 @@ Shiny & Plotrix (R Libraries)
 * **Create a Twitter Developer account [here](https://developer.twitter.com/). After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
 * **After creating a Twitter App you will get Twitter API keys, now in Rstudio open server.R file & replace "XXXXXXXXX" with appropriate API keys.**
 * **Now execute this script, using "Run App" button provided in the above section of RStudio.**
+* **Once you execute the script, you will get an interactive dashboard to analyze Sentiment Analysis of Twitter Data.**
+* **Once your run the ui.R/server.R script, it will show the following dashboard which will be interactive:**
 
 ## Contributors
 
