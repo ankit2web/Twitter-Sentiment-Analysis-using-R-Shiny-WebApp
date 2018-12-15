@@ -26,8 +26,7 @@ Shiny & Plotrix (R Libraries)
 ```
 ## Steps to execute this program are :
 
-* **Create a Twitter Developer account [here](https://developer.twitter.com/).**
-* **After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
+* **Create a Twitter Developer account [here](https://developer.twitter.com/). After your Developer Account gets approved, [create a Twitter App](https://developer.twitter.com/en/apps/create).** 
 
 ## Contributors
 
