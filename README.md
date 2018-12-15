@@ -32,32 +32,32 @@ Shiny & Plotrix (R Libraries)
 * **Once you execute the script, you will get an interactive dashboard to analyze Sentiment Analysis of Twitter Data.**
 * **Once your run the ui.R/server.R script, it will show the following dashboard which will be interactive:**
 
-**1) Search input & Location Selection (By default location is set to Worldwide)**
+**1. Search input & Location Selection (By default location is set to Worldwide)**
 
 ![Alt text](sample_output/search.png)
 
 
-**2) Word Cloud Formation **
+**2. Word Cloud Formation**
 
 ![Alt text](sample_output/wordcloud.png)
 
-**3) Plotting Histogram of Sentiments **
+**3. Plotting Histogram of Sentiments**
 
 ![Alt text](sample_output/histogram.png)
 
-**4) Pie Chart for Sentiment Percentage**
+**4. Pie Chart for Sentiment Percentage**
 
 ![Alt text](sample_output/piechart.png)
 
-**5) Table of Analyzed Tweets associated with the searched Hashtag**
+**5. Table of Analyzed Tweets associated with the searched Hashtag**
 
 ![Alt text](sample_output/table.png)
 
-**6) Barplot of Top 20 Users who used that Hashtag**
+**6. Barplot of Top 20 Users who used that Hashtag**
 
 ![Alt text](sample_output/top20.png)
 
-**7) Twitter Handle Analysis (Hashtag Frequencies by a particular User) **
+**7. Twitter Handle Analysis (Hashtag Frequencies by a particular User)**
 
 ![Alt text](sample_output/handle.png)
 
