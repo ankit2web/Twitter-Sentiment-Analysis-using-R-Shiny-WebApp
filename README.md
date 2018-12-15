@@ -23,6 +23,6 @@ Twitter API
 R Binary
 An IDE for R Programming (RStudio)
 ```
-## Authors
+## Contributors
 
 * **Ankit Pandey** - *Initial work* - [ankit2web](https://github.com/ankit2web)
