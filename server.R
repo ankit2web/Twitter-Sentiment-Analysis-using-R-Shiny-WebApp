@@ -1,3 +1,4 @@
+# Made with 💖 by Ankit Pandey (https://www.github.com/ankit2web)
 #
 # This is the server logic of a Shiny web application. You can run the 
 # application by clicking 'Run App' above.
@@ -14,7 +15,7 @@ EnsurePackage<-function(x)
 {x <- as.character(x)
 if (!require(x,character.only=TRUE))
 {
-  install.packages(pkgs=x,repos="http://cran.r-project.org")
+  install.packages(pkgs=x,repos="https://cran.r-project.org/")
   require(x,character.only=TRUE)
 }
 }
@@ -39,11 +40,11 @@ PrepareTwitter<-function()
 PrepareTwitter()
 
 shinyServer(function(input, output, session) {
-  consumer_key <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your consumer key
-  consumer_secret <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your consumer secret
-  access_token <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your access token
-  access_secret <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your access secret
-  setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret) # Sets up the OAuth credentials for a twitteR session
+  consumer_api_key <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your consumer key
+  consumer_api_secret <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your consumer secret
+  access_token <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your access token
+  access_token_secret <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enter your access secret
+  setup_twitter_oauth(consumer_api_key, consumer_api_secret, access_token, access_token_secret) # Sets up the OAuth credentials for a twitteR session
   
   #Search tweets and create a data frame -Stanton (2013)
   # Clean the tweets
@@ -137,8 +138,7 @@ shinyServer(function(input, output, session) {
     
     #Merging three data frames into one
     table_final=data.frame(Text=table1$Text, Positive=table2$value, Negative=table3$value, Score=table1$value)
-    #Storing Analysis in CSV file (Optional)
-    #write.csv(table_final,file="SentiAnalysis.csv",append = TRUE) #To store Analysis in CSV, uncomment this line
+    
     return(table_final)
   }
   
@@ -188,7 +188,7 @@ shinyServer(function(input, output, session) {
   {
     library(tm)
     library(wordcloud)
-    corpus <- Corpus(VectorSource(text))
+    corpus <- VCorpus(VectorSource(text)) #Fixed Corpus Transformation issue
     #clean text
     clean_text <- tm_map(corpus, removePunctuation)
     #clean_text <- tm_map(clean_text, content_transformation)
