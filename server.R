@@ -15,7 +15,7 @@ EnsurePackage<-function(x)
 {x <- as.character(x)
 if (!require(x,character.only=TRUE))
 {
-  install.packages(pkgs=x,repos="https://cran.r-project.org/")
+  install.packages(pkgs=x,repos="https://mran.microsoft.com/")
   require(x,character.only=TRUE)
 }
 }
@@ -61,8 +61,8 @@ shinyServer(function(input, output, session) {
   
   # Function to create a data frame from tweets
   
-  pos.words = scan('~/sentiment/positive_words.txt', what='character', comment.char=';') #Provide your path to "positive_words.txt" file
-  neg.words = scan('~/sentiment/negative_words.txt', what='character', comment.char=';') #Provide your path to "negative_words.txt" file
+  pos.words = scan('positive_words.txt', what='character', comment.char=';') #Provide your path to "positive_words.txt" file
+  neg.words = scan('negative_words.txt', what='character', comment.char=';') #Provide your path to "negative_words.txt" file
   
   wordDatabase<-function()
   {
@@ -167,7 +167,6 @@ shinyServer(function(input, output, session) {
     nn = table_final$NegPercent
     nn[is.nan(nn)] <- 0
     table_final$NegPercent = nn*100
-    write.csv(table_final,file="SentiAnalysis.csv",append = FALSE)
     return(table_final)
   }
   
